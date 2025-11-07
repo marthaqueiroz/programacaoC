@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main (){
+
+   /*constantes de movimentos (numero de casas que cada peça se moverá)*/
+
+   const int casas_torre = 5;
+   const int casas_bispo = 5;
+   const int casas_rainha = 8;
+
+
+
+    /*Movimentação da Torre (usando while)*/
+
+    int t = 1;
+
+ while (t <= casas_torre)
+ {
+    printf("Direita \n");
+    t++;
+ }
+ 
+    /*Movimentação do Bispo (usando do-while)*/
+
+    int b = 1;
+
+    do
+    {
+        printf("Cima, Direita \n");
+        b++;
+    } while (b <= casas_bispo);
+    
+
+     /*Movimentação Rainha (usando for)*/
+
+
+     for ( int r = 1; r <= casas_rainha; r++)
+     {
+        printf("Esquerda\n");
+     }
+     
+
+
+
+}
